@@ -1,0 +1,8 @@
+Consumer Key (API Key):Aagu0pp6Pxwqko2FvO0o6e3WV
+Consumer Secret (API Secret):SO8WOaE1oWqxWCsHpiaeerJIfgCrabG0ALqfqhNTUETMnuLVdE
+Access Token:763426261-YxzzQoiaZkc9pRz46y3jJDBvgZ6nr1DEgS6GSRlG
+Access Token Secret:H0MnGQj4WXeigbmH0zHA5YbzD9GUSJMTOn0UK6bKAFsEP
+
+Install pip and Twitter:
+	sudo apt-get install python-pip
+	sudo pip install Twitter

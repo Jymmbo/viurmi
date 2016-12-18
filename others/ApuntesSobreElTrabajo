@@ -1,0 +1,38 @@
+PASOA A SEGUIR
+
+Install pip and Twitter and TwitterSearch:
+	sudo apt-get install python-pip
+	pip install Twitter
+	pip install TwitterSearch
+	
+--1) GET trends/place (Twitter): obtengo los 50 trending topics mundiales
+--2) Ejecuto un comando para que me elimine las líneas con carácteres especiales, de esta manera filtramos idiomas como: árabe, ruso, griego...
+	la búsqueda con carácteres de los cuales nos daría error.
+--3) A partir de cada keyword, busqueda de los 100 primeros Tweets
+
+python miningkeywords.py
+tr -sc 'A-Za-z0-9#\012' '?' <allkeywords.txt | sed -e '/?/d'>allkeywordfiltrado.txt
+python mainsearch.py
+
+###########################################################################################
+
+LA IDEA INICIAL
+
+Install pip and Twitter and TwitterSearch and Polyglot:
+	sudo apt-get install python-pip
+	pip install Twitter
+	pip install TwitterSearch
+	pip install polyglot
+
+LOS PASOS QUE VAMOS A SEGUIR
+-La idea inicial era obtener 10.000 Twetts pero, no es posible.
+--Los distintos metodos que tiene la API, nos permiten como maximo 200
+-Por ello, el proceso de generación del Dataset, será el siguiente:
+--1) GET trends/place: para obtener los 10 trending topics mundiales (ME SACA 45)
+--2) GET search/tweets: a partir de esos trending topics, realizamos la búsqueda e intentamos obtener 1.000 por cada. A VER QUE PASA CON LOS MIL!!
+---q (identificador, obtenido del metodo anterior), locale (lengua), count (número)
+
+PERO EN REALIDAD, EL PROCESO SE EJECUTA DE LA SIGUIENTE MANERA:
+--1) GET trends/place (Twitter): obtengo los 50 trending topics mundiales
+--2) Compruebo que se trate de terminos en ingles (Polyglot)
+--3) Para cada termino en ingles, busqueda de los Tweets

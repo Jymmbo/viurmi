@@ -15,7 +15,7 @@ tr -sc 'A-Za-z0-9#\012' '?' <allkeywords.txt | sed -e '/?/d'>allkeywordfiltrado.
 python mainsearch.py
 
 	Filtrado para que me borre caracteres raros
-tr -sc 'A-Za-z0-9\012:\040' '?' < corpus/corpus_final_test | tr -d '?' > corpus_final_test_filtrado
+tr -sc 'A-Za-z0-9\012:\040' '?' < corpus/corpus_test2 | tr -d '?' > corpus_test_mikel
 
 ###########################################################################################
 

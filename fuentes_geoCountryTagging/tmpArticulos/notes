@@ -1,0 +1,1 @@
+cut -d'      ' -f2 --complement tmpDataNamedEntities.txt |sort | uniq -c  | sort -nr | grep 'Iniesta' | more

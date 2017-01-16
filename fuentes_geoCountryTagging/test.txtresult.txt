@@ -1,0 +1,4 @@
+This is the first tweet and is about Bogotá, a beautiful city|Colombia@2^Ecuador@1^Venezuela@1^
+The second one is about London, I was there 5 years ago.|United States@2^Hong Kong@1^Guinea@1^Greece@1^Germany@1^
+Third is about Andrés Iniesta, fantastic player.|Spain@7^Mexico@3^Germany@2^El Salvador@2^Colombia@2^
+This one is about Barack Obama, former president of USA.|United States@6^Canada@1^
